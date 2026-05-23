@@ -15,7 +15,7 @@ A suite manager CLI for Claude Code plugins. Instead of accumulating all plugins
 |---|---|
 | [Bun](https://bun.sh/) | Runtime + package manager (TypeScript) |
 | [Zod](https://zod.dev/) | Schema validation for suite definitions |
-| [OpenTUI](https://opentui.com/) | Terminal UI framework for the suite selector |
+| [@opentui/core](https://opentui.com/) | Terminal UI framework for the suite selector (Bun-exclusive, Zig-native) |
 | [Prettier](https://prettier.io/) | Code formatting |
 
 ## Design Decisions
