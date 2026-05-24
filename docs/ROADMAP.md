@@ -124,9 +124,9 @@ Card-based selector using `@opentui/core`. Each card shows armor name + descript
 
 ---
 
-## [ ] Phase 5 — Wire It Up
+## [x] Phase 5 — Wire It Up
 
-### [ ] Task 5.1 — `index.ts`
+### [x] Task 5.1 — `index.ts`
 
 The full flow:
 1. `listArmors()` from cloud
