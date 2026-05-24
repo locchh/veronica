@@ -82,7 +82,7 @@ export async function pickArmor(
     });
 
     const logo = new TextRenderable(renderer, {
-      content: " ▐▛███▜▌\n▝▜█████▛▘\n   ▘▘ ▝▝",
+      content: " ▐▛███▜▌\n▝▜█████▛▘\n ▘▘ ▝▝  ",
       fg: "#D4A843",
     });
     card.add(logo);
