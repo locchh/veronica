@@ -26,9 +26,9 @@ Read and write `.veronica-lock` JSON at the project root.
 
 ---
 
-## [ ] Phase 2 — GitHub Client
+## [x] Phase 2 — GitHub Client
 
-### [ ] Task 2.1 — `src/github.ts`
+### [x] Task 2.1 — `src/github.ts`
 
 Two thin functions:
 - `listFolder(path: string)` → array of `{ name, type, path }` via GitHub Contents API
