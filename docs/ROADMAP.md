@@ -72,7 +72,7 @@ Enumerate all armors from the cloud + read each `description.md`.
 
 ---
 
-### [ ] Task 3.4 — `src/armor/download.ts`
+### [x] Task 3.4 — `src/armor/download.ts`
 
 Recursively fetch all files of one armor (excluding `description.md`).
 
