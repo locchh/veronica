@@ -52,7 +52,7 @@ Zod schema for armor metadata (name + description).
 
 ---
 
-### [ ] Task 3.2 — `src/armor/validator.ts`
+### [x] Task 3.2 — `src/armor/validator.ts`
 
 Given a folder listing, check that it follows the armor convention (has `description.md`, no unexpected files at root).
 
