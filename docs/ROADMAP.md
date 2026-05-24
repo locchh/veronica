@@ -104,7 +104,7 @@ Delete every path in `MANAGED_PATHS` and clear the lock.
 
 ## [ ] Phase 4 — TUI
 
-### [ ] Task 4.1 — `src/tui/animation.ts`
+### [x] Task 4.1 — `src/tui/animation.ts`
 
 Move and adapt `misc/deploy-animation.ts` into the real source tree.
 
