@@ -19,6 +19,14 @@ veronica
 # 4. Done!
 ```
 
+## Update
+
+```bash
+veronica --update
+```
+
+Pulls the latest code from GitHub and reinstalls dependencies.
+
 ## Related to
 
 [What is Veronica](https://marvelcinematicuniverse.fandom.com/wiki/Veronica)

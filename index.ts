@@ -4,10 +4,17 @@ import { wipeArmor } from "./src/armor/wipe";
 import { downloadArmor } from "./src/armor/download";
 import { installArmor } from "./src/armor/install";
 import { deployAnimation } from "./src/tui/animation";
+import { runUpdate } from "./src/update";
 
 
 
 async function main() {
+  const args = process.argv.slice(2);
+  if (args.includes("--update") || args.includes("-u")) {
+    await runUpdate();
+    return;
+  }
+
   const projectRoot = process.cwd();
 
   // 1. List armors
