@@ -27,6 +27,17 @@ veronica --update
 
 Pulls the latest code from GitHub and reinstalls dependencies.
 
+## Avoiding rate limits
+
+GitHub allows only 60 unauthenticated API requests per hour per IP. If you hit the limit, set a personal access token:
+
+```bash
+export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+veronica
+```
+
+The token raises the limit to 5000 requests per hour. No scopes are required for public repos. Create one at [github.com/settings/tokens](https://github.com/settings/tokens).
+
 ## Related to
 
 [What is Veronica](https://marvelcinematicuniverse.fandom.com/wiki/Veronica)
