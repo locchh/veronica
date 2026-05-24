@@ -82,7 +82,7 @@ Recursively fetch all files of one armor (excluding `description.md`).
 
 ---
 
-### [ ] Task 3.5 — `src/armor/install.ts`
+### [x] Task 3.5 — `src/armor/install.ts`
 
 Write downloaded files to their target paths in the project.
 
