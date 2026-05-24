@@ -13,6 +13,16 @@ export type ArmorVerdict =
   | { ok: true }
   | { ok: false; reason: string };
 
+/**
+ * Validates that an armor folder follows the armor convention:
+ * - Has a description.md file
+ * - Only contains allowed files and directories
+ * - Armor name contains only alphanumeric characters, hyphens, and underscores
+ * 
+ * @param armorName - The name of the armor folder
+ * @param entries - The folder listing from GitHub
+ * @returns ArmorVerdict - Whether the armor is valid and any reason for invalidity
+ */
 export function validateArmor(armorName: string,
     entries: GitHubEntry[]): ArmorVerdict {
     
