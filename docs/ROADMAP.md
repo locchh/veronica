@@ -4,7 +4,7 @@ Implementation broken into small, verifiable tasks. Build bottom-up: foundation 
 
 ---
 
-## [ ] Phase 1 — Foundation
+## [x] Phase 1 — Foundation
 
 ### [x] Task 1.1 — `src/paths.ts`
 
@@ -16,7 +16,7 @@ Define every managed path as a constant in one place.
 
 ---
 
-### [ ] Task 1.2 — `src/lock.ts`
+### [x] Task 1.2 — `src/lock.ts`
 
 Read and write `.veronica-lock` JSON at the project root.
 
