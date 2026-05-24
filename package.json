@@ -1,8 +1,33 @@
 {
   "name": "veronica",
+  "version": "0.1.0",
+  "description": "An armor manager CLI for Claude Code plugins — switch curated sets of skills, agents, hooks, MCPs on demand via TUI.",
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locchh/veronica.git"
+  },
+  "homepage": "https://github.com/locchh/veronica",
+  "bugs": {
+    "url": "https://github.com/locchh/veronica/issues"
+  },
+  "keywords": [
+    "claude-code",
+    "cli",
+    "tui",
+    "bun",
+    "claude",
+    "plugins"
+  ],
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\" \"index.ts\" \"misc/**/*.ts\""
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "prettier": "^3.8.3"

@@ -31,7 +31,8 @@ function randomStarfield(rows: number, seed: number): string[] {
       const frac = v - Math.floor(v);
       if (frac > 0.88) {
         const ch = STAR_CHARS[Math.floor(frac * 100) % STAR_CHARS.length]!;
-        const color = STAR_COLORS[Math.floor(frac * 1000) % STAR_COLORS.length]!;
+        const color =
+          STAR_COLORS[Math.floor(frac * 1000) % STAR_COLORS.length]!;
         line += `${color}${ch}${RESET}`;
       } else {
         line += " ";
@@ -141,7 +142,13 @@ async function playLoop<T>(promise: Promise<T>): Promise<T> {
   while (!done) {
     const pulse = tick % 4;
     const capsuleColor =
-      pulse === 0 ? BRIGHT_YELLOW : pulse === 1 ? YELLOW : pulse === 2 ? WHITE : BRIGHT_YELLOW;
+      pulse === 0
+        ? BRIGHT_YELLOW
+        : pulse === 1
+          ? YELLOW
+          : pulse === 2
+            ? WHITE
+            : BRIGHT_YELLOW;
     const capsuleChar = tick % 6 < 3 ? "◆" : "◇";
     const trailLength = 2 + (tick % 4);
 
@@ -190,7 +197,11 @@ async function playOutro(armorName: string) {
     await sleep(140);
   }
 
-  const unpackFrames: Array<{ lines: string[]; status: string; pause: number }> = [
+  const unpackFrames: Array<{
+    lines: string[];
+    status: string;
+    pause: number;
+  }> = [
     {
       lines: ["", "", `${BOLD}${BRIGHT_YELLOW}◆${RESET}`],
       status: `${DIM}Unpacking...${RESET}`,
