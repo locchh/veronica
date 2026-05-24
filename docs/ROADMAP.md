@@ -151,9 +151,9 @@ Bootstrap script: check for Bun (install if missing), clone the repo, link `bun 
 
 ---
 
-## [ ] Phase 7 — First Armor
+## [x] Phase 7 — First Armor
 
-### [ ] Task 7.1 — `armors/mod-01/`
+### [x] Task 7.1 — `armors/mod-01/`
 
 Create one real armor in the repo to validate the full flow.
 
