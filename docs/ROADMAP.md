@@ -42,7 +42,7 @@ Two thin functions:
 
 ## [ ] Phase 3 — Armor Operations
 
-### [ ] Task 3.1 — `src/armor/schema.ts`
+### [x] Task 3.1 — `src/armor/schema.ts`
 
 Zod schema for armor metadata (name + description).
 
