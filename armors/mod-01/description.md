@@ -1,0 +1,1 @@
+For YOLO per, equip this armor to get safety guardrails and LSP-first code navigation.
