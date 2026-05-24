@@ -40,7 +40,7 @@ Two thin functions:
 
 ---
 
-## [ ] Phase 3 — Armor Operations
+## [x] Phase 3 — Armor Operations
 
 ### [x] Task 3.1 — `src/armor/schema.ts`
 
@@ -92,7 +92,7 @@ Write downloaded files to their target paths in the project.
 
 ---
 
-### [ ] Task 3.6 — `src/armor/wipe.ts`
+### [x] Task 3.6 — `src/armor/wipe.ts`
 
 Delete every path in `MANAGED_PATHS` and clear the lock.
 
