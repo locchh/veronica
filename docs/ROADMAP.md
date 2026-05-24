@@ -102,7 +102,7 @@ Delete every path in `MANAGED_PATHS` and clear the lock.
 
 ---
 
-## [ ] Phase 4 — TUI
+## [x] Phase 4 — TUI
 
 ### [x] Task 4.1 — `src/tui/animation.ts`
 
@@ -114,7 +114,7 @@ Move and adapt `misc/deploy-animation.ts` into the real source tree.
 
 ---
 
-### [ ] Task 4.2 — `src/tui/ArmorPicker.ts`
+### [x] Task 4.2 — `src/tui/ArmorPicker.ts`
 
 Card-based selector using `@opentui/core`. Each card shows armor name + description. Arrow keys navigate, Enter selects.
 
