@@ -6,7 +6,7 @@ Implementation broken into small, verifiable tasks. Build bottom-up: foundation 
 
 ## [ ] Phase 1 — Foundation
 
-### [ ] Task 1.1 — `src/paths.ts`
+### [x] Task 1.1 — `src/paths.ts`
 
 Define every managed path as a constant in one place.
 
