@@ -42,4 +42,12 @@ async function main() {
   await deployAnimation(name, job);
 }
 
-main();
+main().catch((err) => {
+  // Print clean error without Bun's stack-trace clutter
+  if (err instanceof Error) {
+    console.error(`\n✗ ${err.message}\n`);
+  } else {
+    console.error(err);
+  }
+  process.exit(1);
+});

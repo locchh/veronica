@@ -25,17 +25,21 @@ function authHeaders(): Record<string, string> {
 
 /** Wrap rate-limit errors with actionable guidance. */
 function describeFailure(prefix: string, response: Response): Error {
+    const remaining = response.headers.get("x-ratelimit-remaining");
+    const status = response.status;
+    const statusText = (response.statusText || "").toLowerCase();
     const rateLimitHit =
-        response.status === 403 &&
-        response.headers.get("x-ratelimit-remaining") === "0";
+        status === 429 ||
+        (status === 403 && (remaining === "0" || statusText.includes("rate limit")));
     if (rateLimitHit) {
         return new Error(
-            `${prefix}: GitHub API rate limit hit (60/hour unauthenticated).\n` +
-            `  Either wait ~1 hour, or set GITHUB_TOKEN to lift the limit to 5000/hour.\n` +
-            `  Create a token (no scopes needed for public repos): https://github.com/settings/tokens`,
+            `GitHub API rate limit hit (60/hour unauthenticated).\n` +
+            `Either wait ~1 hour, or set GITHUB_TOKEN to raise the limit to 5000/hour.\n` +
+            `Create a token (no scopes needed for public repos):\n` +
+            `  https://github.com/settings/tokens`,
         );
     }
-    return new Error(`${prefix}: ${response.status} ${response.statusText}`);
+    return new Error(`${prefix}: ${status} ${response.statusText}`);
 }
 
 /**
