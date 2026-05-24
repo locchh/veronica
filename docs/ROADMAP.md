@@ -139,9 +139,9 @@ The full flow:
 
 ---
 
-## [ ] Phase 6 — Distribution
+## [x] Phase 6 — Distribution
 
-### [ ] Task 6.1 — `scripts/install.sh`
+### [x] Task 6.1 — `scripts/install.sh`
 
 Bootstrap script: check for Bun (install if missing), clone the repo, link `bun run index.ts` as `veronica` in PATH.
 
