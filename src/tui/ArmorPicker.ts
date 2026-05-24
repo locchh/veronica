@@ -7,8 +7,8 @@ import {
 const CARD_WIDTH = 60;
 const BODY_INNER_WIDTH = CARD_WIDTH - 4; // borders + padding
 
-/** Wrap text to a max line width without breaking words. */
-function wrapText(text: string, width: number): string {
+/** Wrap text to a max line width and center each line within that width. */
+function wrapAndCenter(text: string, width: number): string {
   const words = text.split(/\s+/);
   const lines: string[] = [];
   let current = "";
@@ -22,7 +22,10 @@ function wrapText(text: string, width: number): string {
     }
   }
   if (current) lines.push(current);
-  return lines.join("\n");
+  // pad each line on the left so the block reads as centered
+  return lines
+    .map((line) => " ".repeat(Math.max(0, Math.floor((width - line.length) / 2))) + line)
+    .join("\n");
 }
 
 /** Truncate a name if it would overflow the title area. */
@@ -107,7 +110,7 @@ export async function pickArmor(
       const name = fitTitle(armor.name.toUpperCase(), CARD_WIDTH - 10);
       card.title = ` 【 ${name} 】 `;
       card.bottomTitle = ` ${selectedIndex + 1} / ${armors.length} `;
-      body.content = wrapText(armor.description, BODY_INNER_WIDTH);
+      body.content = wrapAndCenter(armor.description, BODY_INNER_WIDTH);
     };
     update();
 
