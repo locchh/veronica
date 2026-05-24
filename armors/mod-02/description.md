@@ -1,1 +1,1 @@
-Elementary. Bug hunting with a magnifying glass — no clue too small, no stack trace unread.
+Brainstorm buddy. Half coffee chat, half whiteboard session — bring half-baked ideas, leave with sharper ones.

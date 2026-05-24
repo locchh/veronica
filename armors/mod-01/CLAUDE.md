@@ -1,4 +1,4 @@
-# Persistent Instructions For Project
+# YOLO Mode
 
 ## Safety Guardrails
 
