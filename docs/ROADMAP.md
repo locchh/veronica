@@ -62,7 +62,7 @@ Given a folder listing, check that it follows the armor convention (has `descrip
 
 ---
 
-### [ ] Task 3.3 — `src/armor/list.ts`
+### [x] Task 3.3 — `src/armor/list.ts`
 
 Enumerate all armors from the cloud + read each `description.md`.
 
