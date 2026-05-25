@@ -1,1 +1,1 @@
-Brainstorm buddy. Half coffee chat, half whiteboard session — bring half-baked ideas, leave with sharper ones.
+Brainstorm partner who does the homework. Pauses, looks it up, then thinks it through with you.
