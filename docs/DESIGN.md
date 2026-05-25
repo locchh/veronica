@@ -129,7 +129,7 @@ Map each file path from the armor folder to its target location in the project:
 Create parent directories as needed before writing each file.
 
 
-## CLI Arguments
+## Synopsis
 
 | Command | Description |
 |---|---|
