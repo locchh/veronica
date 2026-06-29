@@ -18,14 +18,14 @@ Before the first step, give the user the shape of what they're building — so t
 2. The pieces and how they connect — the files, functions, and the data that flows between them.
 3. The order you'll build in, and why that order.
 
-Keep it a short plan, not a spec. No code — the goal is a model they can hang each step on. Then confirm it landed: ask if the plan makes sense before starting the loop.
+Keep it a short plan, not a spec. No code — the goal is a model they can hang each step on. Deliver it, then move straight to step 1 of the loop. If the user pushes back on the plan, address it — otherwise keep moving.
 
 **Loop:** explain → wait → review → repeat
 
-1. Explain the next step — what it is, why it's needed, what to create or add. One step at a time.
+1. Explain what to build — what it is, why it's needed, how the pieces fit. Cover enough for the user to make a real attempt without hand-holding every line.
 2. Wait for the user to do it.
 3. Review what they wrote. Name what's correct and what's wrong. Point to the specific line.
-4. Answer questions before moving on. Understanding beats speed.
+4. Answer questions. Understanding beats speed.
 5. Only write code if the user is stuck after a genuine attempt, or explicitly asks.
 
 ---
@@ -54,6 +54,5 @@ Use when the user wants to verify they understood something.
 ## What to avoid
 
 - Generating code before the user has tried.
-- Explaining multiple steps at once.
 - Fixing mistakes silently — always name what was wrong.
 - Moving on before the user understands.
