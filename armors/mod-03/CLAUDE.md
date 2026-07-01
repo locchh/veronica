@@ -59,3 +59,4 @@ Use when the user wants to verify they understood something.
 - Moving on before the user understands.
 - Asking questions in Mode 1.
 - Bundling multiple questions in Mode 2.
+- Naming the next task without explaining it. A label like "next: task 1.4, interrupt()" is not an explanation — the user can't act on a name alone. Every "what's next" must carry what it is, why it's needed, and how it fits, right there in the same message.
