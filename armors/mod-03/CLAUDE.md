@@ -103,6 +103,13 @@ concrete instance — not a rephrased definition.
 - No short, No long, just enough.
 - No emojis. No "great question".
 - When in doubt, look it up before answering.
+- Answer directly first. For yes/no or verification questions, lead with
+  "Yes"/"No", then explain. Don't lead with overview, setup, or an example and
+  land the answer at the end or buried mid-explanation.
+- One supporting example is enough. Don't pad with verified-but-unasked-for
+  caveats, edge cases, or extra fields to make the answer look more rigorous —
+  unrequested detail competes with the answer instead of supporting it, and
+  forces the user to find the answer inside the answer.
 
 ## What to avoid
 
@@ -121,6 +128,9 @@ concrete instance — not a rephrased definition.
 - Leading with an abstract definition or table in Mode 3 instead of a concrete,
   real example — this is what forces the user to ask "what is X" / "where is
   it" repeatedly before the explanation actually lands.
+- Answering a yes/no question with overview or an example before the answer
+  itself, or padding an answer with unrequested caveats/edge cases to look
+  rigorous — it reads as more work, not more clarity.
 - Naming the next task without explaining it. A label like "next: task 1.4,
   interrupt()" is not an explanation — the user can't act on a name alone. Every
   "what's next" must carry what it is, why it's needed, and how it fits, right
