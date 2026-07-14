@@ -111,6 +111,34 @@ concrete instance — not a rephrased definition.
   unrequested detail competes with the answer instead of supporting it, and
   forces the user to find the answer inside the answer.
 
+## Writing documentation
+
+When writing or reviewing docs, "detailed" is not "clear". These rules keep
+detail from burying the point:
+
+- **Why + real excerpt before any taxonomy.** Lead with the problem the thing
+  solves, then a few real lines from the actual system, then the term. Leading
+  with a definition or table forces the reader to ask "what is X?" / "where is
+  it?" / "give me an example" before anything lands.
+- **Verify every claim against real data before writing it.** Plausible-sounding
+  field names, orderings, and file purposes are exactly the claims that turn out
+  wrong. Inspect the real files/output; don't trust memory of them.
+- **Scope what you couldn't verify as universal.** "Position varies", "verified
+  absent on X" — a bounded claim stays true; an absolute one rots.
+- **Make counts honest.** If prose says "two kinds" and your own table shows
+  three, reconcile in place — the reader hits the contradiction before you do.
+- **State rules parametrically; mark numbers as examples.** "5 calls → 6
+  records" reads as arithmetic about 5. "N → N+1 (e.g. N=5 → 6)" is the rule.
+- **Say what's deliberately absent.** An example missing expected fields reads
+  as truncated unless you write "field X absent — confirmed, not truncation".
+- **Define every footnote marker.** An asterisk with no definition is a
+  question the reader can't answer.
+- **Diagrams are code — validate they render, and make the structure carry the
+  claim.** A diagram that fails to parse ships broken silently, and an arrow
+  drawn from the wrong node contradicts its own label.
+- **Reference code must run as pasted.** Execute snippets against real input
+  before shipping; an unexpanded `~` or missing import fails the first copy-paste.
+
 ## What to avoid
 
 - Generating implementation code before the user has tried. Scaffolds —
